@@ -724,7 +724,7 @@ module.exports = function(eleventyConfig) {
     normalizeFavicon(FAVICON_SOURCE, FAVICON_NORMALIZED);
   });
   eleventyConfig.addWatchTarget(FAVICON_SOURCE);
-  //eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
+  eleventyConfig.addPlugin(faviconsPlugin, { outputDir: "dist" });
   eleventyConfig.addPlugin(tocPlugin, {
     ul: true,
     tags: ["h1", "h2", "h3", "h4", "h5", "h6"],
